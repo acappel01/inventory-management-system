@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.welcome');
 });
 
 Route::get('/dashboard', function () {
@@ -27,12 +27,12 @@ Route::get('/layout-sidenav-light', function() {
     return view('layout-sidenav-light');
 });
 
-Route::get('/login', function() {
-    return view('login');
-});
+// Route::get('/login', function() {
+//     return view('login');
+// });
 
 Route::get('/password', function() {
-    return view('password');
+    return view('auth.password');
 });
 
 Route::get('/charts', function() {
@@ -40,7 +40,7 @@ Route::get('/charts', function() {
 });
 
 Route::get('/register', function() {
-    return view('register');
+    return view('auth.register');
 });
 
 Route::get('/tables', function() {
@@ -48,13 +48,13 @@ Route::get('/tables', function() {
 });
 
 Route::get('/401', function() {
-    return view('401');
+    return view('errors.401');
 });
 
 Route::get('/404', function() {
-    return view('404');
+    return view('errors.404');
 });
 
 Route::get('/500', function() {
-    return view('500');
+    return view('erros.500');
 });

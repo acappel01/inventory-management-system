@@ -17,8 +17,8 @@
             </div>
         @endif
     </div>
-    @include('nav')
-    @include('sidenav')
+    @include('partials/nav')
+    @include('partials/sidenav')
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid">
