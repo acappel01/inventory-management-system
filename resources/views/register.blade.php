@@ -1,4 +1,6 @@
-@include('header')
+@extends('layout')
+
+@section('content')
     <body class="bg-primary">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
@@ -54,8 +56,5 @@
                     </div>
                 </main>
             </div>
-            <div id="layoutAuthentication_footer">
-                @include('footer-content')
-            </div>
-        </div>
-@include('footer')
+            <div id="layoutAuthentication_footer">            
+@endsection()

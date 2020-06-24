@@ -1,4 +1,6 @@
-@include('header')
+@extends('layout')
+
+@section('content')
     <body>
         <div id="layoutError">
             <div id="layoutError_content">
@@ -20,7 +22,4 @@
                 </main>
             </div>
             <div id="layoutError_footer">
-                @include('footer-content')
-            </div>
-        </div>
-@include('footer')
+@endsection()
