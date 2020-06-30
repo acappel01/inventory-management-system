@@ -12,49 +12,45 @@
 */
 
 Route::get('/', function () {
-    return view('auth.welcome');
+    return view('pages.auth.login');
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('pages.dashboard');
 });
 
 Route::get('/layout-static', function() {
-    return view('layout-static');
+    return view('pages.layout-static');
 });
 
 Route::get('/layout-sidenav-light', function() {
-    return view('layout-sidenav-light');
+    return view('pages.layout-sidenav-light');
 });
 
-// Route::get('/login', function() {
-//     return view('login');
-// });
-
 Route::get('/password', function() {
-    return view('auth.password');
+    return view('pages.auth.password');
 });
 
 Route::get('/charts', function() {
-    return view('charts');
+    return view('pages.charts');
 });
 
 Route::get('/register', function() {
-    return view('auth.register');
+    return view('pages.auth.register');
 });
 
 Route::get('/tables', function() {
-    return view('tables');
+    return view('pages.tables');
 });
 
 Route::get('/401', function() {
-    return view('errors.401');
+    return view('pages.errors.401');
 });
 
 Route::get('/404', function() {
-    return view('errors.404');
+    return view('pages.errors.404');
 });
 
 Route::get('/500', function() {
-    return view('erros.500');
+    return view('pages.erros.500');
 });

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout.app')
 
 @section('content')
 <body class="sb-nav-fixed">
@@ -17,8 +17,8 @@
             </div>
         @endif
     </div>
-        @include('partials/nav')
-        @include('partials/sidenav')
+        @include('/layout/partials/nav')
+        @include('/layout/partials/sidenav')
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
